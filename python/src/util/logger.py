@@ -3,7 +3,7 @@ import os
 
 
 class Logger:
-    def __init__(self, name: str, path: str, logging: bool) -> None:
+    def __init__(self, name: str, path: str, log: bool) -> None:
         """
         Initialize a logger object.
 
@@ -13,8 +13,9 @@ class Logger:
         :return: None
         """
 
-        self.logging = logging
+        self.logging = log
         self.logger = self.setup_logger(name, path)
+        self.log(logging.INFO, f"Logger initialized with name '{name}' and path '{path}'")
 
     def log(self, level: int, message: str) -> None:
         """
