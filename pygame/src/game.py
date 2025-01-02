@@ -51,6 +51,13 @@ class Game:
         if keys[pygame.K_ESCAPE]:
             self.running = False
 
+        # Handle mouse
+        click = pygame.mouse.get_pressed()
+        if click[0]:
+            pass
+        elif click[2]:
+            pass
+
     def update(self):
         """
         Update the game objects
