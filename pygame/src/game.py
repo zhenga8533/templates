@@ -1,5 +1,7 @@
-from dotenv import load_dotenv
 import os
+
+from dotenv import load_dotenv
+
 import pygame
 
 
@@ -7,8 +9,6 @@ class Game:
     def __init__(self):
         """
         Initialize the game
-
-        :return: None
         """
 
         # Load the environment variables
@@ -22,7 +22,7 @@ class Game:
         self.clock = pygame.time.Clock()
         self.running = True
 
-    def run(self):
+    def run(self) -> None:
         """
         Run the game loop
 
@@ -35,7 +35,7 @@ class Game:
             self.update()
             self.draw()
 
-    def handle_events(self):
+    def handle_events(self) -> None:
         """
         Handle the events in the game
 
@@ -58,7 +58,7 @@ class Game:
         elif click[2]:
             pass
 
-    def update(self):
+    def update(self) -> None:
         """
         Update the game objects
 
@@ -67,7 +67,7 @@ class Game:
 
         pass
 
-    def draw(self):
+    def draw(self) -> None:
         """
         Draw the game objects on the screen
 

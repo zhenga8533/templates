@@ -3,7 +3,7 @@ import os
 
 
 class Logger:
-    def __init__(self, name: str, path: str, log: bool) -> None:
+    def __init__(self, name: str, path: str, log: bool):
         """
         Initialize a logger object.
 
